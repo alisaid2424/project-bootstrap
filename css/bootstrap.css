@@ -1,126 +1,135 @@
-:root{
-    --dark-color:#19283f;
-    --green-color:#33d1cc;
-    --red-color:#ff3150;
-    --yellow-color: #ffc400;
-    --section-color: #eff7fa;
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
-.main-btn{
-    background-color:var(--red-color) ;
-    color: var(--yellow-color) ;
-    padding: .5rem 1rem;
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
 }
-.main-btn:hover{
-    background-color:var(--green-color) ;
-    color: var(--dark-color) ;
+.main-btn:hover {
+  background-color: var(--green-color);
+  color: var(--dark-color);
 }
-.main-title::after{
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 2px;
-    bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: var(--green-color);
+.main-title::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--green-color);
 }
 /* Start Nav-bar */
-.navbar{
-    position: absolute;
-    width: 100%;
-    left: 0;
+.navbar {
+  background-color: var(--dark-color);
+  position: absolute;
+  width: 100%;
+  left: 0;
 }
-.navbar .navbar-nav .nav-link{
-    color: white;
+.navbar .navbar-nav .nav-link {
+  color: white;
 }
 .navbar .navbar-nav .nav-link.active,
 .navbar .navbar-nav .nav-link:focus,
-.navbar .navbar-nav .nav-link:hover{
-    color: var(--green-color);
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--green-color);
 }
-.navbar .navbar-toggler{
-    color: white;
-    border: 2px solid white;
-    font-size: 25px;
+.navbar .navbar-toggler {
+  color: white;
+  border: 2px solid white;
+  font-size: 25px;
 }
-.navbar .navbar-toggler:focus{
-    box-shadow: none;
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
 }
-.navbar .navbar-toggler[aria-expanded = "true"]{
-    border-color: var(--green-color);
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green-color);
 }
 .navbar .searsh {
-border-left: 2px solid var(--green-color);
+  border-left: 2px solid var(--green-color);
 }
-.navbar .searsh svg{
-    color: var(--green-color);
+.navbar .searsh svg {
+  color: var(--green-color);
 }
 /* End Nav-bar */
 /* Start Landing */
-.landing{
-    background-image: url(../img/header.jpg);
-    background-size: cover;
-    min-height: 100vh;
-    color: white;
+.landing {
+  background-image: url(../img/header.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
 }
-.landing h1{
-    max-width: 600px;
+.landing h1,
+.landing p {
+  max-width: 600px;
 }
 
-.landing p{
-    max-width: 600px;
+@media (max-width: 767px) {
+  .landing h1 {
+    font-size: 22px;
+  }
+  .landing p {
+    font-size: 15px;
+    max-width: 90%;
+  }
 }
 /* End Landing */
 /* Start get-need */
-.get-need{
-    background-color:rgb(255 49 80 / 38%);
-    min-height: 400px;
-    color: white;
+.get-need {
+  background-color: rgb(255 49 80 / 38%);
+  min-height: 400px;
+  color: white;
 }
-.get-need p{
-    max-width: 600px;
+.get-need p {
+  max-width: 600px;
 }
 /* End get-need */
 /* Start services  */
-.services{
-    background-color: var(--section-color);
+.services {
+  background-color: var(--section-color);
 }
-.services h2{
-    color: var(--dark-color);
-    font-weight: 900;
+.services h2 {
+  color: var(--dark-color);
+  font-weight: 900;
 }
-.services svg{
-    color: var(--green-color);
+.services svg {
+  color: var(--green-color);
 }
 /* End services  */
 /* Start download  */
-.download{
-    background-color: var(--dark-color);
+.download {
+  background-color: var(--dark-color);
 }
 /*  End download  */
 /* Start Contact */
-.contact{
-    background-color: var(--section-color);
+.contact {
+  background-color: var(--section-color);
 }
-.contact h2{
-    color: var(--dark-color);
+.contact h2 {
+  color: var(--dark-color);
 }
-.contact  p{
-max-width: 600px;
+.contact p {
+  max-width: 600px;
 }
-.contact svg{
-    color: var(--green-color);
+.contact svg {
+  color: var(--green-color);
 }
 /* End Contact */
 /* start footer */
-footer{
-    background-color: var(--dark-color);
+footer {
+  background-color: var(--dark-color);
+  font-size: 14px;
 }
-footer span{
-    color: var(--green-color);
+footer span {
+  color: var(--green-color);
 }
 /* End footer */
